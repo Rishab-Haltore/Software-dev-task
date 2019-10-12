@@ -1,117 +1,358 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
 <head>
-<meta name="viewport" content="width=device-width initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <title>Task</title>
+  <link rel="stylesheet" href="uitask.css">
 
+  <!-- bootstrap links -->
+  
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="uitask.css" />
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style type="text/css">
-
-
-</style>
+ 
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/cf13603698.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
+  
+  
 <body>
-
-  <nav class="topbar">
-      <div class="nav-wrapper">
-        <div>
-          <img id="image" src="whitepanda.png" />
+  <section class="mb-5  ">
+    <div class="container-fluid color1 mb-5">
+      <div class="row">
+        <div class="col-sm-1 px-0 text-center icon-bar">
+          <ul class="nav nav-tabs shadow-sm flex-column">
+            <li class="nav-item icon-1"><a href="#home" class="nav-link act text-black-50" data-toggle="tab"><i class="fas fa-th-large fa-1x"></i></a></li>
+            <li class="nav-item"><a href="#search" class="nav-link text-black-50" data-toggle="tab"><i class="fas fa-search fa-1x"></i></a></li>
+            <li class="nav-item icon-3"><a href="#store" class="nav-link text-black-50" data-toggle="tab"><i class="fas fa-store fa-1x"></i></a></li>
+          </ul>
         </div>
-      <a class="far fa-bell"><span class="fa fa-circle"></span><span class="num1">699</span></a>
-      <i class="fa fa-circle"></i><span class="num">AB</span>
-      </div>
+        <div class="col-sm-11 px-0">
+          <nav>
+            <div class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand navbar-light shadow-sm py-2 px-0 color2">
+              <a href="#" class="navbar-brand px-5"><img src="whitepanda.png" alt="Whitepanda Logo"></a>
+              <div class="ml-auto">
+                <ul class="navbar-nav acc">
+                  <li class="nav-item"><a href="#" class="nav-link mx-3 far fa-bell fa-2x"><span class="fa fa-circle"></span><span class="num1">699</span></a></li>
+                  <li class="nav-item bg-diff rounded-circle px-1 h-50"><a href="#" class=" nav-link font-weight-normal lead text-light">AB</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
-      <h1 class="header">Content Store</h1>
+          <div class="tab-content">
+            <div class="tab-pane bg-light active" id="home">
+              <div class="container">
+                <h1 class="py">Content Store</h1>
+                <div class="container jumbo-bg py-4 px-4">
+                  <h5 class="textcol font-weight-normal pb-2">Got bulk orders or almost similar orders ? Fill the order breif in an excel sheet</h5>
+                  <p class="font-weight-normal fo pb-2">If you're wondering about an easy way to place orders in large numbers, we provide a way customized just for that. <br>
+                    Download our excel sheet, and fill thee order brief in the prescribed format and submit. In case you need any help, <u>we <br>
+                      are just a click away to assist you in placeing your order</u> </p>
+                  <button type="button" name="button" class="btn btn-outline-success px-5">Order via Excel Sheet</button>
+                </div>
+              </div>
+              <section class="px-0 mb-5">
+                <div class="container">
+                  <!-- <div class="card-deck"> -->
+                  <div class="row pt-5 pb-4">
+                    <div class="col-lg-4 mt-3">
+                      <div class="card rounded-lg">
+                        <div class="card-body">
+                          <div class="mt-3 mb-2">
+                            <img src="panda logo.jpg" alt="panda logo" id="floating" class="ml-2">
+                            <div class="text-left p-2">
+                              <h5 class="card-title mb-0 text-secondary">Blog / Article</h5>
+                              <p class="text-black-50">from ₹500</p>
+                            </div>
+                          </div>
+                          <div class="card-text ml-2 fo">
+                            <p>Typically 450-400 words,an e-book is <br>perfect for your target audience ranging <br> from prospective customers to users </p>
+                          </div>
+                          <button type="button" name="button" class="btn btn-outline-success px-5 mt-2 mb-3 ml-2">Order</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                      <div class="card rounded-lg shadow-lg">
+                        <div class="card-body">
+                          <div class="mt-3 mb-2">
+                            <img src="panda logo.jpg" alt="a" id="floating" class="ml-2 panda">
+                            <div class="text-left p-2">
+                              <h5 class="card-title mb-0 bar">Newsletter / E-mailer</h5>
+                              <p class="text-black-50">from ₹1000</p>
+                            </div>
+                          </div>
+                          <div class="card-text ml-2 fo">
+                            <p>Typically 450-400 words,an e-book is <br>perfect for your target audience ranging <br> from prospective customers to users </p>
+                          </div>
+                          <button type="button" name="button" class="btn btn-outline-success px-5 mt-2 mb-3 ml-2">Order</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                      <div class="card rounded-lg">
+                        <div class="card-body">
+                          <div class="mt-3 mb-2">
+                            <img src="panda logo.jpg" alt="panda logo" id="floating" class="ml-2">
+                            <div class="text-left p-2">
+                              <h5 class="card-title mb-0 text-secondary">Whitepaper</h5>
+                              <p class="text-black-50">from ₹2000</p>
+                            </div>
+                          </div>
+                          <div class="card-text ml-2 fo">
+                            <p>Typically 450-400 words,an e-book is <br>perfect for your target audience ranging <br> from prospective customers to users </p>
+                          </div>
+                          <button type="button" name="button" class="btn btn-outline-success px-5 mt-2 mb-3 ml-2">Order</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pt-5 pb-4">
+                    <div class="col-lg-4 mt-3">
+                      <div class="card rounded-lg">
+                        <div class="card-body">
+                          <div class="mt-3 mb-2">
+                            <img src="panda logo.jpg" alt="panda logo" id="floating" class="ml-2">
+                            <div class="text-left p-2">
+                              <h5 class="card-title mb-0 text-secondary">e-book</h5>
+                              <p class="text-black-50">from ₹1000</p>
+                            </div>
+                          </div>
+                          <div class="card-text ml-2 fo">
+                            <p>Typically 450-400 words,an e-book is <br>perfect for your target audience ranging <br> from prospective customers to users </p>
+                          </div>
+                          <button type="button" name="button" class="btn btn-outline-success px-5 mt-2 mb-3 ml-2">Order</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                      <div class="card rounded-lg">
+                        <div class="card-body">
+                          <div class="mt-3 mb-2">
+                            <img src="panda logo.jpg" alt="panda logo" id="floating" class="ml-2">
+                            <div class="text-left p-2">
+                              <h5 class="card-title mb-0 text-secondary">Report / Guide</h5>
+                              <p class="text-black-50">from ₹1000</p>
+                            </div>
+                          </div>
+                          <div class="card-text ml-2 fo">
+                            <p>Typically 450-400 words,an e-book is <br>perfect for your target audience ranging <br> from prospective customers to users </p>
+                          </div>
+                          <button type="button" name="button" class="btn btn-outline-success px-5 mt-2 mb-3 ml-2">Order</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                      <div class="card rounded-lg">
+                        <div class="card-body">
+                          <div class="mt-3 mb-2">
+                            <img src="panda logo.jpg" alt="panda logo" id="floating" class="ml-2">
+                            <div class="text-left p-2">
+                              <h5 class="card-title mb-0 text-secondary">Product Description</h5>
+                              <p class="text-black-50">from ₹500</p>
+                            </div>
+                          </div>
+                          <div class="card-text ml-2 fo">
+                            <p>Typically 450-400 words,an e-book is <br>perfect for your target audience ranging <br> from prospective customers to users </p>
+                          </div>
+                          <button type="button" name="button" class="btn btn-outline-success px-5 mt-2 mb-3 ml-2">Order</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pt-5 pb-4">
+                    <div class="col-lg-4 mt-3">
+                      <div class="card rounded-lg">
+                        <div class="card-body">
+                          <div class="mt-3 mb-2">
+                            <img src="panda logo.jpg" alt="panda logo" id="floating" class="ml-2">
+                            <div class="text-left p-2">
+                              <h5 class="card-title mb-0 text-secondary">Website Content</h5>
+                              <p class="text-black-50">from ₹1000</p>
+                            </div>
+                          </div>
+                          <div class="card-text ml-2 fo">
+                            <p>Typically 450-400 words,an e-book is <br>perfect for your target audience ranging <br> from prospective customers to users </p>
+                          </div>
+                          <button type="button" name="button" class="btn btn-outline-success px-5 mt-2 mb-3 ml-2">Order</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                      <div class="card rounded-lg">
+                        <div class="card-body">
+                          <div class="mt-3 mb-2">
+                            <img src="panda logo.jpg" alt="panda logo" id="floating" class="ml-2">
+                            <div class="text-left p-2">
+                              <h5 class="card-title mb-0 text-secondary">Video Script</h5>
+                              <p class="text-black-50">from ₹1000</p>
+                            </div>
+                          </div>
+                          <div class="card-text ml-2 fo">
+                            <p>Typically 450-400 words,an e-book is <br>perfect for your target audience ranging <br> from prospective customers to users </p>
+                          </div>
+                          <button type="button" name="button" class="btn btn-outline-success px-5 mt-2 mb-3 ml-2">Order</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                      <div class="card rounded-lg">
+                        <div class="card-body">
+                          <div class="mt-2 mb-1">
+                            <img src="panda logo.jpg" alt="panda logo" id="floating" class="ml-2">
+                            <div class="text-left p-1">
+                              <h5 class="card-title mb-0 text-secondary">Company Profile / Brochure</h5>
+                              <p class="text-black-50">from ₹2000</p>
+                            </div>
+                          </div>
+                          <div class="card-text ml-2 fo">
+                            <p>Typically 450-400 words,an e-book is <br>perfect for your target audience ranging <br> from prospective customers to users </p>
+                          </div>
+                          <button type="button" name="button" class="btn btn-outline-success px-5 mt-2 mb-3 ml-2">Order</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pt-5 pb-4">
+                    <div class="col-lg-4 mt-3">
+                      <div class="card rounded-lg">
+                        <div class="card-body">
+                          <div class="mt-3 mb-2">
+                            <img src="panda logo.jpg" alt="panda logo" id="floating" class="ml-2">
+                            <div class="text-left p-2">
+                              <h5 class="card-title mb-0 text-secondary">Press Release</h5>
+                              <p class="text-black-50">from ₹2000</p>
+                            </div>
+                          </div>
+                          <div class="card-text ml-2 fo">
+                            <p>Typically 450-400 words,an e-book is <br>perfect for your target audience ranging <br> from prospective customers to users </p>
+                          </div>
+                          <button type="button" name="button" class="btn btn-outline-success px-5 mt-2 mb-3 ml-2">Order</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer class="container-fluid mt-5 pt-5 mb-4 color2">
+                <nav>
+                  <div class="my-3">
+                    <ul class="nav justify-content-center">
+                      <li class="nav-item"><a href="https://www.twitter.com" target="_blank" class="text-black-50 nav-link px-4"><i class="fab fa-twitter fa-2x"></i></a></li>
+                      <li class="nav-item"><a href="https://www.twitter.com" target="_blank" class="text-black-50 nav-link  px-5"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                      <li class="nav-item"><a href="https://www.instagram.com" target="_blank" class="text-black-50 nav-link px-4"><i class="fab fa-instagram fa-2x"></i></a></li>
+                      <li class="nav-item"><a href="https://www.facebook.com" target="_blank" class="text-black-50 nav-link px-4"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="text-center text-secondary">
+                  <p class="my-0">Copyright &copy; 2019 White Panda Media Pvt. Ltd.</p>
+                  <p>All rights reserved</p>
+                </div>
+                <div>
+                  <nav>
+                    <div class="text-secondary">
+                      <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0"> Privacy Policy &nbsp&nbsp|</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0">Terms of service &nbsp&nbsp|</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0">Service Agreement &nbsp&nbsp|</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </footer>
+            </div>
 
-      <div class="container">
-        <div class="jumbotron">
-          <p id="first">Got bulk orders or similar orders?Fill the oder breif in an excel sheet</p>
-          <p id="second">if you're wondering about an easy way to place oders in large numbers,we provide a way to customized just for that</p>
-          <p id="third">Download our excel sheet,and fill the order brief in the prescribed format and submit.In case you need any help,<u>we</u></p>
-          <p id="fourth">are just a click away to assist you in placing oders</p>
-          <button class="btn success">Order via Excel Sheet</button>
+
+            <div class="tab-pane fade bg-light" id="search">
+              <div class="container">
+                <h2 class="py-5"> hello world</h2>
+                <div class="container jumbo-bg py-4 px-4">
+                  <h5 class="textcol font-weight-normal pb-3">Search for any book here.</h5>
+                  <form class="form-group" action="index.html" method="post">
+                    <input type="text" name="search" placeholder="Custom Search..." class="form-control rounded-lg">
+                  </form>
+                </div>
+              </div>
+              <footer class="container-fluid mt-5 mb-4 color2">
+                <nav>
+                  <div class="my-3">
+                    <ul class="nav justify-content-center">
+                      <li class="nav-item"><a href="https://www.twitter.com" target="_blank" class="text-black-50 nav-link px-4"><i class="fab fa-twitter fa-2x"></i></a></li>
+                      <li class="nav-item"><a href="https://www.twitter.com" target="_blank" class="text-black-50 nav-link  px-5"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                      <li class="nav-item"><a href="https://www.instagram.com" target="_blank" class="text-black-50 nav-link px-4"><i class="fab fa-instagram fa-2x"></i></a></li>
+                      <li class="nav-item"><a href="https://www.facebook.com" target="_blank" class="text-black-50 nav-link px-4"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="text-center text-secondary">
+                  <p class="my-0">Copyright &copy; 2019 White Panda Media Pvt. Ltd.</p>
+                  <p>All rights reserved</p>
+                </div>
+                <div>
+                  <nav>
+                    <div class="text-secondary">
+                      <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0"> Privacy Policy &nbsp&nbsp|</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0">Terms of service &nbsp&nbsp|</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0">Service Agreement &nbsp&nbsp|</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </footer>
+            </div>
+            <div class="tab-pane fade" id="store">
+              <div class="container bg-light">
+                good evening
+              </div>
+              <footer class="container-fluid mt-5 mb-4 color2">
+                <nav>
+                  <div class="my-3">
+                    <ul class="nav justify-content-center">
+                      <li class="nav-item"><a href="https://www.twitter.com" target="_blank" class="text-black-50 nav-link px-4"><i class="fab fa-twitter fa-2x"></i></a></li>
+                      <li class="nav-item"><a href="https://www.twitter.com" target="_blank" class="text-black-50 nav-link  px-5"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                      <li class="nav-item"><a href="https://www.instagram.com" target="_blank" class="text-black-50 nav-link px-4"><i class="fab fa-instagram fa-2x"></i></a></li>
+                      <li class="nav-item"><a href="https://www.facebook.com" target="_blank" class="text-black-50 nav-link px-4"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="text-center text-secondary">
+                  <p class="my-0">Copyright &copy; 2019 White Panda Media Pvt. Ltd.</p>
+                  <p>All rights reserved</p>
+                </div>
+                <div>
+                  <nav>
+                    <div class="text-secondary">
+                      <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0"> Privacy Policy &nbsp&nbsp|</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0">Terms of service &nbsp&nbsp|</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0">Service Agreement &nbsp&nbsp|</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary pr-0">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </footer>
+            </div>
+          </div>
         </div>
       </div>
 
-
-
-
-
-    </nav>
-
-
-
-
-
-
-<nav class="navbar bg-light">
-
-
-
-<div class="icon-bar">
-  <a class="active" id="home" href="#"><i class='fas fa-th-large' style='font-size:22px'></i></a><div class="vl"></div>
-  <a href="#"><i class="fa fa-search"></i></a>
-  <a href="#"><i class="fas fa-store"></i></a>
-</div>
-
-</nav>
-
-
-      <div class="flex-container">
-
-  <div class="box1">
-    <img id="panda" src="panda logo.jpg" /><p id="blog">Blog / Article</p><p id="rupee">from ₹500</p>
-    <article>
-      <section id="sec1">Typically 450-400 words,an e-book is</section>
-      <section>perfect for your target audience ranging</section>
-      <section>from prospective customers to users</section>
-    </article>
-    <button class="button button1">Order</button>
-  </div>
-  <div class="column">
-      <div class="card">
-        <span class="fa fa-circle one"></span><p style="color:#21b6a8;" id="blogtwo">Newsletter / E-mailer</p><p id="rupee">from ₹1000</p>
-        <article>
-          <section id="sec2">Typically 450-400 words,an e-book is</section>
-          <section>perfect for your target audience ranging</section>
-          <section>from prospective customers to users</section>
-        </article>
-        <button class="button button1">Order</button>
-      </div>
     </div>
-
-  <div class="box2">
-    <img id="panda" src="panda logo.jpg" /><p id="blog">Whitepaper</p><p id="rupee">from ₹2000</p>
-    <article>
-      <section id="sec1">Typically 450-400 words,an e-book is</section>
-      <section>perfect for your target audience ranging</section>
-      <section>from prospective customers to users</section>
-    </article>
-    <button class="button button1">Order</button>
-
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
+  </section>
 
 </body>
+
 </html>
